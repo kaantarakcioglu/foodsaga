@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foodsaga Kitchen — Support</title>
+<style>
+  :root{
+    --ground:#FAFAFB; --panel:#F1F0F3; --ink:#16161A; --ink-soft:#55555F;
+    --rule:#E1E0E6; --accent:#9A5B06;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#0E0E12; --panel:#17171D; --ink:#EAE9EF; --ink-soft:#9A99A6;
+      --rule:#2A2A33; --accent:#F0A93A;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--ground); color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+    padding:56px 20px 88px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:40rem;margin:0 auto;display:flex;flex-direction:column;gap:36px}
+  .eyebrow{
+    font-family:system-ui,-apple-system,sans-serif;font-size:11px;font-weight:700;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;
+  }
+  h1{font-family:system-ui,-apple-system,sans-serif;font-size:clamp(30px,6vw,40px);
+     font-weight:700;line-height:1.12;letter-spacing:-.02em;margin:0}
+  h2{font-family:system-ui,-apple-system,sans-serif;font-size:20px;font-weight:600;
+     margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  p{margin:0 0 12px}
+  ul{margin:0;padding-left:1.15em;display:flex;flex-direction:column;gap:8px}
+  a{color:var(--accent);text-underline-offset:2px}
+  .box{background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:22px 24px}
+  footer{border-top:1px solid var(--rule);padding-top:22px;
+    font-family:system-ui,-apple-system,sans-serif;font-size:13px;color:var(--ink-soft)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Foodsaga Kitchen for iPhone</div>
+    <h1>Support</h1>
+  </header>
+
+  <div class="box">
+    <p style="margin:0">Something broken, a question, or an idea for the game? Email
+    <a href="mailto:foodsagakitchen@gmail.com">foodsagakitchen@gmail.com</a> and you'll get a reply.</p>
+  </div>
+
+  <section>
+    <h2>Common questions</h2>
+    <p><strong>I bought something and it didn't arrive.</strong><br>
+    Open Settings in the game and tap <strong>Restore Purchases</strong>. That asks Apple for everything
+    you've bought and re-applies it. If it still doesn't show up, email us with the date of the purchase.</p>
+
+    <p><strong>I bought Remove Ads but I still see ads.</strong><br>
+    Same fix — tap Restore Purchases in Settings. Remove Ads clears all forced ads; the optional
+    "watch an ad for a free spin" cards stay by choice.</p>
+
+    <p><strong>I got a new phone and my kitchen is gone.</strong><br>
+    This version saves your progress on the device itself, so it doesn't travel between phones.
+    Purchases do — Restore Purchases brings those back. Cloud saves are coming in a future update.</p>
+
+    <p><strong>How do I start over?</strong><br>
+    Settings → Reset. It warns you first, and it erases everything permanently.</p>
+
+    <p><strong>The ad won't load.</strong><br>
+    Ads need a connection, and sometimes there just isn't one available to show. Try again in a minute.</p>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>The privacy policy is <a href="privacy.html">here</a>.</p>
+  </section>
+
+  <footer>
+    Kaan Tarakçıoğlu · Developer of Foodsaga Kitchen<br>
+    <a href="mailto:foodsagakitchen@gmail.com">foodsagakitchen@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
