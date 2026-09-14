@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foodsaga Kitchen</title>
+<style>
+  :root{
+    --ground:#FAFAFB; --panel:#F1F0F3; --ink:#16161A; --ink-soft:#55555F;
+    --rule:#E1E0E6; --accent:#9A5B06;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#0E0E12; --panel:#17171D; --ink:#EAE9EF; --ink-soft:#9A99A6;
+      --rule:#2A2A33; --accent:#F0A93A;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--ground); color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif; font-size:17px; line-height:1.62;
+    padding:72px 20px 88px; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:34rem;margin:0 auto;display:flex;flex-direction:column;gap:32px}
+  .eyebrow{
+    font-family:system-ui,-apple-system,sans-serif;font-size:11px;font-weight:700;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;
+  }
+  h1{font-family:system-ui,-apple-system,sans-serif;font-size:clamp(32px,7vw,44px);
+     font-weight:700;line-height:1.1;letter-spacing:-.02em;margin:0}
+  p.lede{margin:0;color:var(--ink-soft)}
+  .links{display:flex;flex-direction:column;gap:12px}
+  .links a{
+    display:block;background:var(--panel);border:1px solid var(--rule);border-radius:4px;
+    padding:18px 22px;text-decoration:none;color:var(--ink);
+    font-family:system-ui,-apple-system,sans-serif;font-size:16px;font-weight:600;
+  }
+  .links a span{display:block;font-weight:400;font-size:14px;color:var(--ink-soft);margin-top:3px}
+  footer{border-top:1px solid var(--rule);padding-top:22px;
+    font-family:system-ui,-apple-system,sans-serif;font-size:13px;color:var(--ink-soft)}
+  footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">iPhone Game</div>
+    <h1>Foodsaga Kitchen</h1>
+  </header>
+
+  <p class="lede">Build a kitchen, open boxes, collect 80 dishes. No timers, no waiting.</p>
+
+  <div class="links">
+    <a href="support.html">Support<span>Questions, purchases, and how to reach us</span></a>
+    <a href="privacy.html">Privacy Policy<span>What the game stores and what it doesn't</span></a>
+  </div>
+
+  <footer>
+    Kaan Tarakçıoğlu · <a href="mailto:foodsagakitchen@gmail.com">foodsagakitchen@gmail.com</a>
+  </footer>
+
+</div>
+</body>
+</html>
